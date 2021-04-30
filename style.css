@@ -1,0 +1,57 @@
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  list-style-type: none;
+  padding: 15px;
+}
+
+nav li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #333;
+  cursor: pointer;
+}
+
+nav li a:hover {
+  color: red;
+}
+
+.mobile-menu-expander {
+  display: none;
+  border: 1px solid #333;
+  border-radius: 7px;
+  font-size: 2rem;
+  float: right;
+  margin-right: 30px;
+  padding: 7px;
+  transform: rotate(90deg);
+}
+
+.mobile-menu {
+  display: none;
+  float: left;
+}
+
+.show-menu {
+  display: none;
+}
+
+.show-menu li {
+  display: block;
+  width: 100%;
+}
+
+@media(max-width: 600px) {
+  .mobile-menu-expander {
+    display: block;
+  }
+  .desktop-menu {
+    display: none;
+  }
+  .show-menu {
+    display: block;
+  }
+}
